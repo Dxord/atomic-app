@@ -7,10 +7,12 @@ import bgImage from "../../public/images/background.png";
 import { Button } from "../atoms/Button";
 import { Text } from "../atoms/Text";
 import { TalentCarousel } from "../organisms/TalentCarousel";
+import { JobCategories } from "@/app/api/job-categories/route";
+import { Talent } from "@/app/api/talents/route";
 
 type DashboardProps = { 
-  jobCategories: any[];
-  talents: any[];
+  jobCategories: JobCategories[];
+  talents: Talent[];
 };
 
 export const Dashboard: React.FC<DashboardProps> = ({ jobCategories, talents }) => {

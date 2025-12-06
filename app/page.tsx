@@ -2,7 +2,7 @@ import { Dashboard } from "@/components/templates/Dashboard";
 import { Footer } from "@/components/templates/Footer";
 import { JobCategories } from "./api/job-categories/route";
 import { Talent } from "./api/talents/route";
-const baseURL = `http://localhost:3000/api`;
+const baseURL = `https://app-coin-siren.vercel.app//api`;
 
 async function getJobCategories(): Promise<JobCategories[]> {
   const res = await fetch(baseURL + "/job-categories", {
